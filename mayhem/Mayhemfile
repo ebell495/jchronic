@@ -1,0 +1,6 @@
+project: jchronic
+target: JChronicFuzz
+
+cmds:
+    - cmd: /jazzer --cp=/project/fuzz/src/JChronicFuzz.jar:/project/fuzz/src/libs.jar --target_class=JChronicFuzz
+      libfuzzer: true
